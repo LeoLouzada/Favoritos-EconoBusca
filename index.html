@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - EconoBusca</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <span class="navbar-brand">EconoBusca</span>
+                <div class="ml-auto navbar-icons">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="navbar-menu">
+                <a href="#"><i class="fas fa-tag"></i> Ofertas</a>
+                <a href="#"><i class="fas fa-gift"></i> Cupons</a>
+                <a href="#"><i class="fas fa-plus-square"></i> Adicionar Produto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div class="container favorite-list">
+        <h1 class="text-center">Favoritos</h1>
+        
+        <!-- Exibe mensagem se não houver favoritos -->
+        <div class="no-favorites-message" style="display: none;">
+            <p>Nenhum produto foi favoritado ainda.</p>
+        </div>
+
+        <!-- Lista de produtos favoritados -->
+        <div class="product-card">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_787973-MLU77159419088_072024-O.webp" alt="Imagem do Produto" class="product-image">
+            <div class="product-info">
+                <div class="product-title">Smartphone Samsung Galaxy A34, 5G, 128GB, 6GB RAM...</div>
+                <div class="product-price">
+                    <span class="product-original-price">R$ 2.197,00</span>
+                    R$ 1.349,99
+                </div>
+                <p>À vista no PIX</p>
+                <button class="purchase-button">Comprar</button>
+            </div>
+            <div class="favorite-icons">
+                <span>&hearts;</span> <!-- Ícone de favorito -->
+                <span>&#128722;</span> <!-- Ícone de carrinho -->
+            </div>
+        </div>
+
+        <!-- Outro produto de exemplo -->
+        <div class="product-card">
+            <img src="https://a-static.mlcdn.com.br/800x560/samsung-galaxy-s23-fe-5g-smartphone-android-128gb-creme/magazineluiza/237986000/834995fab08e1d3c250049974b7dba19.jpg" alt="Imagem do Produto" class="product-image">
+            <div class="product-info">
+                <div class="product-title">Smartphone Samsung Galaxy S23 Fe 5g, 128GB, 8GB...</div>
+                <div class="product-price">
+                    R$ 2.699,10
+                </div>
+                <p>À vista no PIX</p>
+                <button class="purchase-button">Comprar</button>
+            </div>
+            <div class="favorite-icons">
+                <span>&hearts;</span>
+                <span>&#128722;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome para os ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
